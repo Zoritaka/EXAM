@@ -9,4 +9,7 @@ btnSubmit.addEventListener("click", (e)=>{
         localStorage.setItem("User", JSON.stringify(user))
         document.location.href = "Home.html";
     }
+    else{
+        alert("Неправильные данные!")
+    }
 })

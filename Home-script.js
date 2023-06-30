@@ -8,6 +8,7 @@ const GenreSelector = document.querySelector(".Genre")
 const SortOrder = document.querySelector(".SortOrder")
 const SortBy = document.querySelector(".SortBy")
 const btnUser = document.querySelector(".User")
+const btnCart = document.querySelector(".Shop")
 
 const v1 = document.querySelector(".v1")
 const v2 = document.querySelector(".v2")
@@ -1442,9 +1443,19 @@ btnSports.addEventListener("click", ()=>{
 
 function addToCart(id){
   // localStorage.removeItem("Items")
-  let items = JSON.parse(localStorage.getItem("Items")) || []
-  items.push(id)
-  localStorage.setItem("Items", JSON.stringify(items))
+  let user = JSON.parse(localStorage.getItem("User"))
+  if(user == null){
+    document.location.href = "Login.html";
+  }else{
+    if(user.login == true){
+      let items = JSON.parse(localStorage.getItem("Items")) || []
+      items.push(id)
+      localStorage.setItem("Items", JSON.stringify(items))
+      alert("Добавлено!")
+    }else{
+      document.location.href = "Login.html";
+    }
+  }
 }
 
 
@@ -1464,7 +1475,21 @@ btnUser.addEventListener("click", (e)=>{
     }
   }
 })
-
+btnCart.addEventListener("click", (e)=>{
+  e.preventDefault()
+  let user = JSON.parse(localStorage.getItem("User"))
+  if(user == null){
+    document.location.href = "Login.html";
+  }
+  else{
+    if(user.login == true){
+      document.location.href = "Cart.html";
+    }
+    else{
+      document.location.href = "Login.html";
+    }
+  }
+})
 
 
 
