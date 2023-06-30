@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/Cart.css">
+</head>
+<body>
+    <div class="Home">
+        <div class="Navbar">
+            <a href="Home.html" class="Title">
+                <img src="img/spider.png" alt="">
+                <h2>𝐀𝐧𝐢𝐦𝐞̷𝐒𝐭𝐨𝐫𝐞</h2>
+            </a>
+            <div class="Search">
+                <Button class="btnSearch1"><img src="img/search.png" alt=""></Button>
+                <input class="txtSearch1" type="text" placeholder="Sword Art Online">
+            </div>
+            <div class="Navbar_Btn">
+                <a href="Cart.html" class="Shop"><img src="img/shop.png" alt=""></a>                
+                <Button onclick="btnUser()" class="User"><img src="img/user.png"></Button>
+            </div>
+        </div>
+        
+        <div class="Space"></div><!--Пробел для navbar-->
+        <div class="MainBlock">
+            <div class="block">
+                <h2>My wishlist on Anime Store</h2>
+                <div class="txtOption">
+                    <div>PICTURE</div>
+                    <div>PRODUCT NAME</div>
+                    <div>UNIT PRICE</div>
+                </div>
+                <hr>
+                <div class="lstItems">
+                    <!-- <div class="blockAnime">
+                        <button onclick="delItem()">X</button>
+                        <img src="img/book.png" alt="">
+                        <div>SWORD ART ONLINE</div>
+                        <div>5200тг</div>
+                        <div class="number">
+                            <input type="number" value="1">
+                            <div>
+                                <button>-</button>
+                                <button>+</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="sale">
+                    <h2>Price: 0тг</h2>
+                    <button onclick="Pay()">Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Cart-script.js"></script>
+</body>
+</html>

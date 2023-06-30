@@ -1,0 +1,98 @@
+body{
+    background-color: #242121;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.block_form{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px 50px 30px;
+    width: 350px;
+    background-color: #dfdfdf;
+    color: rgb(48,46,46);
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,6);
+    border-radius: 15px;
+    z-index: 999999;
+}
+.block_main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.block .block_child2,.block .block_child{
+    width: 100%;
+}
+
+.block_child{
+    display: flex;
+}
+.block_child input{
+    width: 100%;
+}
+.txt{
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+    padding: 10px;
+}
+input{
+    background-color: rgba(0,0,0,0);
+    color: rgb(31, 31, 31);
+    border: none;
+    border-bottom: 1px solid rgb(178,178,178);
+}
+
+.Anime{
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    z-index: 0;
+}
+.btnSubmit{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,139,139);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.date{
+    color: rgb(26, 24, 24);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    z-index: 999999;
+}
+.logo a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-size: 50px;
+}
+.logo img{
+    width: 60px;
+    height:60px;
+    padding: 10px 0;
+}
+a{
+    color: rgb(104, 105, 172);
+    text-decoration: none;
+    margin-top: 15px;
+}
